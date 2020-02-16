@@ -1,0 +1,70 @@
+{
+	"token": "[unavailable for security purposes]",
+	"cmdPrefix": "!",
+	
+	"accessRoles": [
+		{
+			"guildId": "673177693956734976",
+			"roleId": "673184486539788299"
+		}
+	],
+	
+	"reactRoles": [
+		{
+			"guildId": "673177693956734976",
+			"textChannelId": "673182689926316042",
+			"textMessageId": "673184406688497682",
+			"roleAssign": [
+				["U+2705", "673184486539788299"] // Access
+			]
+		},
+		{
+			"guildId": "673177693956734976",
+			"textChannelId": "673177693956734982",
+			"textMessageId": "673187886765703190",
+			"roleAssign": [
+				["U+1F34E", "673188845042532377"], //Apple
+				["U+2B50", "673188876076187648"], //Stars
+				["U+1F9CA", "673188936880881714"]  //Ice
+			]
+		}
+	],
+	
+	"minecraftWhitelist": {
+		"guildId": "673177693956734976",
+		"textChannelId": "673190768386506753",
+		"accessRoleId": "673184486539788299",
+		"outputFile": "bridge.json"
+	},
+	
+	"pronounRoles": {
+		"guildId": "673177693956734976",
+		"textChannelId": "673177693956734982",
+		"pronouns": [
+		    [
+		      "she",
+		      "her",
+		      "hers",
+		      "her"
+		    ],
+		    [
+		      "he",
+		      "him",
+		      "his",
+		      "his"
+		    ],
+		    [
+		      "they",
+		      "them",
+		      "theirs",
+		      "their"
+		    ],
+		    [
+		      "it",
+		      "it",
+		      "its",
+		      "its"
+		    ]
+		]
+	}
+}

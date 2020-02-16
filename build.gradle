@@ -1,0 +1,47 @@
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src"]
+        }
+    }
+}
+
+dependencies {
+    // This dependency is used by the application.
+    compile ('net.dv8tion:JDA:4.1.0_97'){
+        exclude module: 'opus-java'
+    }
+    
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'
+}
+
+application {
+    // Define the main class for the application.
+    mainClassName = 'io.samoyed.Marten'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'io.samoyed.Marten'
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+ }
+ 
